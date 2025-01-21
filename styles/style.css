@@ -1,0 +1,133 @@
+/* Estilos generales */
+.contenedor-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .productos {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    height: 50vh; /* Limita la altura al 50% del alto de la ventana */
+    overflow-y: auto; /* Habilita el scroll si el contenido supera el tamaño */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .productos-titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .productos-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .productos-mensaje {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Estilo para las tarjetas de productos */
+  .productos-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    width: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .productos-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .productos-card .nombre {
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .productos-card .precio {
+    color: #333;
+    font-size: 1.1rem;
+  }
+  
+  /* Estilo adicional para barra de desplazamiento */
+  .productos::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra de desplazamiento */
+  }
+  
+  .productos::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Color del "pulgar" */
+    border-radius: 4px; /* Bordes redondeados */
+  }
+  
+  .productos::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color de la pista */
+  }
+  
+  .formulario {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .formulario-titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .container-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .container-formulario input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .container-botoes {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .botao-enviar, .botao-limpar {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .botao-limpar {
+    background-color: #6c757d;
+  }
+  

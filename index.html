@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>AluraGeek</title>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="header">
+    <img src="./assets/Logo.svg" alt="logo de AluraGeek" />
+  </header>
+
+  <!-- Contenedor principal -->
+  <main class="container-principal">
+    <div class="contenedor-flex">
+      <!-- Sección de productos -->
+      <section class="productos">
+        <h1 class="productos-titulo">Mis Productos:</h1>
+        <div class="productos-contenedor">
+          <!-- Aquí se renderizarán las tarjetas de productos dinámicamente -->
+          <p class="productos-mensaje">No se han agregado productos.</p>
+        </div>
+      </section>
+
+      <!-- Sección para añadir productos -->
+      <section class="formulario">
+        <h1 class="formulario-titulo">Agregar Producto:</h1>
+
+        <!-- Formulario para añadir productos -->
+        <form class="container-formulario" data-form>
+          <input data-name placeholder="nombre..." type="text">
+          <input data-price placeholder="precio..." type="text">
+          <input data-image placeholder="imagen..." type="text">
+          <span data-mensagem class="mensagemErro"></span>
+          <div class="container-botoes">
+            <button type="submit" class="botao-enviar" id="botao">Enviar...</button>
+            <button type="reset" class="botao-limpar" id="botao">Limpiar...</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="container-rodape">
+    <div>
+      <img src="./assets/Logo.svg" />
+    </div>
+    <p>Desarrollado por MAP</p>
+    <small>Alura Latam 2025</small>
+  </footer>
+
+  <script type="module" src="js/controllers/main.js"></script>
+</body>
+</html>
